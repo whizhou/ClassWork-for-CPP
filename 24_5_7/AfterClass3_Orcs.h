@@ -10,7 +10,7 @@ public:
         cout << "It has " << hands << " hand(s)!" << endl;
         cout << "It has " << legs << " leg(s)!" << endl;
     }
-	~Creature() {
+	virtual ~Creature() {
         cout << "Creature object exiled!" << endl;
     }
 	int GetHands() const { return _hands; }

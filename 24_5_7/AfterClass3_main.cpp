@@ -1,4 +1,4 @@
-#include "Orcs.h"
+#include "AfterClass3_Orcs.h"
 
 
 int main() {
