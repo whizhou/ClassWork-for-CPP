@@ -31,6 +31,7 @@ Creature::Creature(const char * _sound, int _age) : age(_age) {
 }
 
 Creature::Creature(const Creature& other) : age(other.getAge()) {
+    delete[] sound;
     int len = strlen(other.sound);
     sound = new char[len+1];
     strcpy(sound, other.sound);
@@ -50,7 +51,7 @@ Creature& Creature::operator=(const Creature& other) {
 
 //print out info: "Creature with age say sound"
 void Creature::say()const {
-    cout << "Creature with " << age << " say " << sound << endl;
+    cout << "Creature with age " << age << " say " << sound << endl;
 }
 
 int Creature::getAge()const { return age; }
