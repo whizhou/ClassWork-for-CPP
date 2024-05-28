@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.txt": "aspnetcorerazor",
+        "iosfwd": "cpp",
+        "sstream": "cpp"
+    }
+}
