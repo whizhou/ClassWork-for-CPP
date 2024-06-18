@@ -9,10 +9,10 @@ public:
         if (age < 0)
             throw std::invalid_argument("Age cannot be negative!");
     }
-    virtual void makeSound() {}
+    virtual void makeSound() = 0;
 };
 
-class Dog : virtual public Animal {
+class Dog : public Animal {
 public:
     Dog(int age) : Animal(age) {}
     void makeSound() {
@@ -20,7 +20,7 @@ public:
     }
 };
 
-class Cat : virtual public Animal {
+class Cat : public Animal {
 public:
     Cat(int age) : Animal(age) {}
     void makeSound() {
