@@ -3,6 +3,8 @@
         "*.txt": "aspnetcorerazor",
         "iosfwd": "cpp",
         "sstream": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "exception": "cpp",
+        "optional": "cpp"
     }
 }
